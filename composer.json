@@ -1,0 +1,129 @@
+{
+    "name": "Helium",
+    "description": "Helium Composer File",
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://wpackagist.org"
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "wordpress",
+                "type": "webroot",
+                "version": "4.7.5",
+                "dist": {
+                    "type": "zip",
+                    "url": "https://github.com/WordPress/WordPress/archive/4.7.5.zip"
+                },
+                "require" : {
+                    "fancyguy/webroot-installer": "1.0.0"
+                }
+            }
+        },
+        {
+            "type" : "package",
+            "package" : {
+                "name" : "wordpress-test",
+                "type" : "package",
+                "version" : "2.2",
+                "dist" : {
+                    "type" : "zip",
+                    "url" : "https://github.com/nb/wordpress-tests/archive/master.zip"
+                },
+                "require" : {
+                    "composer/installers": "~1.0"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package" : {
+                "name" : "simple-wp",
+                "type" : "wordpress-muplugin",
+                "version" : "1.6",
+                "dist" : {
+                    "type" : "zip",
+                    "url" : "https://github.com/voravor/simple-wp/archive/master.zip"
+                },
+                "require" : {
+                    "php" : ">=5.4.0"
+                }
+            }
+
+        },
+        {
+            "type": "package",
+            "package" : {
+                "name" : "wp-memcached-manager",
+                "type" : "wordpress-plugin",
+                "version" : "1.1",
+                "dist" : {
+                    "type" : "zip",
+                    "url" : "https://github.com/voravor/wp-memcached-manager/archive/master.zip"
+                },
+                "require" : {
+                    "php" : ">=5.5.0"
+                }
+            }
+
+        },
+        {
+            "type" : "package",
+            "package" : {
+                "name" : "wordpress-admin-style",
+                "type" : "wordpress-plugin",
+                "version" : "dev-master",
+                "dist"  : {
+                    "type" : "zip",
+                    "url" : "https://github.com/bueltge/WordPress-Admin-Style/archive/master.zip"
+                },
+                "require" : {
+                    "php" : ">=5.4.0"
+                }
+            }
+        },
+        {
+            "type": "vcs",
+            "url": "https://bitbucket.org/archon810/smartdomdocument.git"
+        }
+
+    ],
+    "require": {
+        "php": ">=5.5.0",
+        
+        "wordpress": "4.8.0",
+        "fancyguy/webroot-installer": "1.0.0",
+        "simple-wp" : "1.6",
+        "wp-memcached-manager": "1.1",
+        "wpackagist-plugin/memcached-redux" : "0.1.*",
+        "wpackagist-plugin/batcache" : "1.4",
+        "guzzlehttp/guzzle": "6.0",
+        "wpackagist-plugin/wordpress-importer": "0.6.3",
+        "wpackagist-theme/twentyfifteen" : "*",
+        "archon810/smartdomdocument": "dev-master",
+        "wpackagist-plugin/jwt-authentication-for-wp-rest-api": "1.2.*",
+        "wpackagist-plugin/wp-rest-api-log": "1.5.*",
+        "wpackagist-plugin/wp-rest-api-cache": "1.2.0"
+
+    },
+    "require-dev" : {
+        "wpackagist-plugin/log-deprecated-notices"  : "*",
+        "wpackagist-plugin/debug-bar"               : "0.8.*",
+        "wpackagist-plugin/debug-bar-console"       : "*",
+	    "wpackagist-plugin/user-switching"          : "*",
+	    "wpackagist-plugin/simply-show-ids"         : "*",
+
+        "wordpress-admin-style"                     : "dev-master",
+        "wpackagist-theme/twentyeleven"             : "*",
+        "wpackagist-theme/twentytwelve"             : "*",
+        "wpackagist-theme/twentythirteen"           : "*",
+        "wpackagist-theme/twentyfourteen"           : "*",
+        "wpackagist-theme/twentyfifteen"            : "*"
+
+    },
+    "extra": {
+        "webroot-dir": "wordpress",
+        "webroot-package": "wordpress"
+    }
+}

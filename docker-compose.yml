@@ -1,0 +1,33 @@
+version: '2'
+services:
+  web:
+    build: .
+    ports:
+     - "80:80"
+     - "443:443"
+    tty: true
+    volumes: 
+      - .:/var/www/html
+      - ./log:/var/log/apache2
+    links: 
+      - mysqldb:mysqldb
+      - memcached:memcached 
+  mysqldb:
+    image: mysql:5.7
+    ports:
+      - "3306:3306"
+    environment: 
+      MYSQL_ROOT_PASSWORD: vvvv
+      MYSQL_DATABASE: voravor
+      MYSQL_USER: vvvv
+      MYSQL_PASSWORD: vvvv
+    volumes:
+      - ./config/etc/mysql/my.cnf:/etc/mysql/conf.d/my.cnf 
+      - ./db_data:/var/lib/mysql
+  memcached:
+    image: memcached 
+    ports:
+      - "11211:11211"
+
+
+
