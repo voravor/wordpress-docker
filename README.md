@@ -20,3 +20,4 @@ openssl req \
 2. Add your dev.mycompany.com record to /etc/hosts
 3. Run docker-compose up -d to build the containers
 4. Run composer install to install wordpress.
+5. Navigate to dev.mycompany.com to enter WP installation 

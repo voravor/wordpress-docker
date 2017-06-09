@@ -11,10 +11,10 @@
             "package": {
                 "name": "wordpress",
                 "type": "webroot",
-                "version": "4.7.5",
+                "version": "4.8",
                 "dist": {
                     "type": "zip",
-                    "url": "https://github.com/WordPress/WordPress/archive/4.7.5.zip"
+                    "url": "https://github.com/WordPress/WordPress/archive/4.8.zip"
                 },
                 "require" : {
                     "fancyguy/webroot-installer": "1.0.0"
@@ -92,7 +92,7 @@
     "require": {
         "php": ">=5.5.0",
         
-        "wordpress": "4.8.0",
+        "wordpress": "4.8",
         "fancyguy/webroot-installer": "1.0.0",
         "simple-wp" : "1.6",
         "wp-memcached-manager": "1.1",

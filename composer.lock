@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "8fd93abcdd27defb842b894a4f41dcb3",
-    "content-hash": "b0d124300fadcfd86d770d562e374e6b",
+    "hash": "80715dc2380ee2ee06063d1b354521c1",
+    "content-hash": "c88c36ad0d897567d492a9328bba9ee0",
     "packages": [
         {
             "name": "archon810/smartdomdocument",
@@ -443,21 +443,11 @@
             "type": "wordpress-muplugin"
         },
         {
-            "name": "voravor",
-            "version": "1.0",
-            "source": {
-                "type": "svn",
-                "url": "https://voravor1:HnJoYojnvcLFAnzFBY7HvsfXjKVawwsP@vip-review-svn.wordpress.com/trials",
-                "reference": "voravor1"
-            },
-            "type": "wordpress-plugin"
-        },
-        {
             "name": "wordpress",
-            "version": "4.7.5",
+            "version": "4.8",
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/WordPress/WordPress/archive/4.7.5.zip",
+                "url": "https://github.com/WordPress/WordPress/archive/4.8.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -715,26 +705,6 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/simply-show-ids/"
-        },
-        {
-            "name": "wpackagist-plugin/user-activation-email",
-            "version": "1.3.0",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/user-activation-email/",
-                "reference": "tags/1.3.0"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/user-activation-email.1.3.0.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/user-activation-email/"
         },
         {
             "name": "wpackagist-plugin/user-switching",
